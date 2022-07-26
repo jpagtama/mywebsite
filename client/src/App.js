@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import SideNav from './components/SideNav';
+import Main from './components/Main';
 
-function App() {
+const App = () => {
   return (
-    <div>App</div>
+    <React.Fragment>
+      <SideNav />
+      <Main />
+    </React.Fragment>
   )
 }
 
-export default App
+export default App;
