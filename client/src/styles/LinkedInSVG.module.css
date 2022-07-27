@@ -1,0 +1,23 @@
+.svg {
+    height: 5rem;
+    width: 5rem;
+}
+.svg:hover {
+    cursor: pointer;
+}
+.svg:hover .inText {
+    transform: translateY(23%); 
+}
+.svg:hover .linkedInText {
+    transform: translateY(100%); 
+}
+
+.inText {
+    transform: translateY(-100%);
+}
+/* #linkedInText {
+
+} */
+.inText, .linkedInText {
+    transition: all 0.5s ease;
+}
