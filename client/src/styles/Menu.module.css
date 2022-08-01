@@ -1,0 +1,11 @@
+.list {
+    list-style: none;
+    padding: 0;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .list {
+        display: block;
+    }
+}

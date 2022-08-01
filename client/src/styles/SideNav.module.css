@@ -1,0 +1,26 @@
+
+.nav {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6rem;
+    background-color:darkolivegreen;
+    box-shadow: 0 3px 15px 0 rgba(0,0,0,0.2);
+}
+@media (min-width: 768px) {
+    .nav {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 15rem;
+        height: 100%;
+        background-color:darkolivegreen;
+    }
+}
