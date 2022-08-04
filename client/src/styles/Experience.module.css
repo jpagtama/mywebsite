@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    overflow: hidden;
 }
 .headingContainer h1 {
     color: ivory;

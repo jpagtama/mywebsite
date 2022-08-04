@@ -1,12 +1,18 @@
-import React from 'react'
+import React, {useEffect} from 'react';
+import { useDispatch } from 'react-redux';
+import { navActions } from '../store/navSlice';
 import { useInView } from 'react-intersection-observer';
 import styles from '../styles/Experience.module.css'
 
 const Experience = () => {
-  const { ref, inView } = useInView({
-    threshold: 0,
-    triggerOnce: true,
-  });
+    const dispatch = useDispatch()
+    const { ref, inView } = useInView({
+        threshold: 0,
+    });
+
+    useEffect(() => {
+        if (inView) dispatch(navActions.activate('experience'));
+    }, [inView, dispatch]);
 
   return (
     <React.Fragment>
