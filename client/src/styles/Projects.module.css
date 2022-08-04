@@ -1,0 +1,27 @@
+.headingContainer {
+    background-color: darkslategray;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+    overflow:hidden;
+}
+.headingContainer h1 {
+    color: ivory;
+    margin: 0;
+}
+.slideIn {
+    animation: fromRight 400ms ease-in-out both;
+}
+
+@keyframes fromRight {
+    0% { transform: translateX(75%); color: darkslategray;}
+    100% { transform: translateX(0%); color: ivory; }
+}
+@media (min-width:768px) {
+    .headingContainer {
+        background-color: darkslategray;
+        padding: 4rem 3rem;
+        margin-bottom: 4rem;
+    }
+}
