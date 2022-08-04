@@ -1,12 +1,18 @@
-import React from 'react'
-import { useInView } from 'react-intersection-observer'
+import React, {useEffect} from 'react'
+import { useDispatch } from 'react-redux';
+import { useInView } from 'react-intersection-observer';
+import {navActions} from '../store/navSlice';
 import styles from '../styles/Education.module.css'
 
 const Education = () => {
-  const {ref, inView} = useInView({
+  const dispatch = useDispatch();
+  const { ref, inView } = useInView({
     threshold: 0,
-    triggerOnce: true
-  })
+  });
+  useEffect(() => {
+    if (inView) dispatch(navActions.activate('education'))
+  }, [inView, dispatch]);
+
   return (
     <React.Fragment>
       <div className={styles.headingContainer}>
