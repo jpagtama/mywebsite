@@ -2,4 +2,10 @@
     padding: 1rem;
     font-size: large;
     color:ivory;
+    transition: transform 150ms ease-out
+}
+.active {
+    /* background-color: darkslategray; */
+    /* font-weight: bold; */
+    transform: scale(1.5) translateX(-10%);
 }
