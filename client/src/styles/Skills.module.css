@@ -31,8 +31,8 @@
 }
 
 @keyframes fromRight {
-    0% { transform: translateX(75%); color: darkslategray;}
-    100% { transform: translateX(0%); color: ivory; }
+    0% { transform: translateX(75%); opacity: 0%;}
+    100% { transform: translateX(0%); opacity: 100%; }
 }
 @media (min-width:768px) {
     .headingContainer {
