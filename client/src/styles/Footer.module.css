@@ -1,18 +1,27 @@
 .footerContainer {
     display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-end;
     min-height: 10rem;
     background-color:lightslategray;
-    padding: 1rem 3rem;
+    padding: 1rem 3rem 0rem 3rem;
 }
 .sideNote {
-    margin-top: auto;
-    color:ivory;
+    color:gainsboro;
     font-size:1rem;
     font-weight:300;
+    text-align:center;
+}
+.sideNote {
+    margin: 0.5rem 0;
 }
 
 @media (min-width: 768px) {
     .footerContainer {
-        
+        align-items: flex-end;
+    }
+    .sideNote {
+        text-align: right;
     }
 }
