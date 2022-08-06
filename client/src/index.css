@@ -20,4 +20,45 @@ html, body {
   margin: 0;
   min-height: 100%;
   min-width: 100%;
+  scroll-behavior: smooth;
+}
+
+@media print {
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #fff;
+  }
+  p {
+    font-size: normal !important;
+  }
+  nav {
+    display: none !important;
+  }
+  [class*="_headingContainer_"] {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  [class^="Skills_skillList"] {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  [class^="Experience_wordDesc"] {
+    font-size: small !important;
+  }
+  h1 {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  div {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  #About, #Experience, #Projects, #Skills, #Education, #Interests {
+    justify-content: flex-start !important;
+    margin: 1rem 0 !important;
+  }
+  section {
+    max-height: 100vh !important;
+  }
 }
