@@ -1,13 +1,15 @@
 import React from 'react';
+import { Provider } from 'react-redux';
+import store from './store';
 import SideNav from './components/SideNav';
 import Main from './components/Main';
 
 const App = () => {
   return (
-    <React.Fragment>
+    <Provider store={store}>
       <SideNav />
       <Main />
-    </React.Fragment>
+    </Provider>
   )
 }
 
