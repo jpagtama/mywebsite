@@ -15,7 +15,7 @@ const Interests = () => {
 
   return (
     <React.Fragment>
-      <div className={styles.headingContainer}>
+      <div id="Interests" className={styles.headingContainer}>
         <h1 ref={ref} className={inView? styles.slideIn: ''}>Interests</h1>
       </div>
       <p className={styles.desc}>

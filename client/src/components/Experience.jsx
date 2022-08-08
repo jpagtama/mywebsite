@@ -16,7 +16,7 @@ const Experience = () => {
 
   return (
     <React.Fragment>
-        <div className={styles.headingContainer} >
+        <div id="Experience" className={styles.headingContainer} >
             <h1 ref={ref} className={ `${styles.heading} ${inView? styles.slideIn:'' }` }>Experience</h1>
         </div>
         <div className={ styles.container }>

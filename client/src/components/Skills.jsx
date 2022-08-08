@@ -15,7 +15,7 @@ const Skills = () => {
 
   return (
     <React.Fragment>
-        <div className={styles.headingContainer}>
+        <div id="Skills" className={styles.headingContainer}>
           <h1 ref={ref} className={inView? styles.slideIn: ''} >Skills</h1>
         </div>
         <div className={styles.skillList}>
@@ -23,6 +23,7 @@ const Skills = () => {
             <ul className={styles.list} >
                 <li>ReactJS</li>
                 <li>Javascript ES5/ES6</li>
+                <li>TypeScript</li>
                 <li>Python</li>
                 <li>Adobe ColdFusion</li>
             </ul>
@@ -32,6 +33,7 @@ const Skills = () => {
                 <li>MongoDB</li>
                 <li>Microsoft SQL</li>
                 <li>GitHub</li>
+                <li>Jest</li>
                 <li>MacOS</li>
                 <li>Windows</li>
                 <li>SourceTree</li>

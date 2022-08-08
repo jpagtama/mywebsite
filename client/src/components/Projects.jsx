@@ -14,7 +14,7 @@ const Projects = () => {
   }, [inView, dispatch]);
 
   return (
-    <div className={ styles.headingContainer }>
+    <div id="Projects" className={ styles.headingContainer }>
       <h1 ref={ref} className={inView? styles.slideIn: ''}>Projects</h1>
     </div>
   )

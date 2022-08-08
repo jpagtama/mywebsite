@@ -15,7 +15,7 @@ const Education = () => {
 
   return (
     <React.Fragment>
-      <div className={styles.headingContainer}>
+      <div id="Education" className={styles.headingContainer}>
         <h1 ref={ref} className={inView? styles.slideIn: ''} >Education</h1>
       </div>
       <div className={styles.educationInfo} >

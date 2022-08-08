@@ -19,7 +19,7 @@ const About = () => {
 
   return (
     <React.Fragment>
-        <div className={styles.headingContainer}>
+        <div id="About" className={styles.headingContainer}>
             <h1 ref={ref} className={inView? styles.slideIn : '' }>Julian Pagtama</h1>
             <h3>Software Developer &bull; Los Angeles, CA &bull; jpagtama@gmail.com</h3>
         </div>
