@@ -4,8 +4,10 @@
     color:ivory;
     transition: transform 150ms ease-out
 }
+.navLink{
+    color: inherit;
+    text-decoration: none;
+}
 .active {
-    /* background-color: darkslategray; */
-    /* font-weight: bold; */
     transform: scale(1.5) translateX(-10%);
 }

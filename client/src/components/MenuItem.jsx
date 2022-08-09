@@ -4,7 +4,7 @@ import styles from '../styles/MenuItem.module.css'
 const MenuItem = props => {
 
   return (
-    <li className={`${styles.listItem} ${props.isActive && styles.active}`} >{ props.title }</li>
+    <li className={`${styles.listItem} ${props.isActive && styles.active}`} ><a className={styles.navLink} href={`#${props.title}`} >{ props.title }</a></li>
   )
 }
 
