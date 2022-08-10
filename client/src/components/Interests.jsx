@@ -19,7 +19,7 @@ const Interests = () => {
         <h1 ref={ref} className={inView? styles.slideIn: ''}>Interests</h1>
       </div>
       <p className={styles.desc}>
-        When I'm not coding, I'm working on digital art, gaming, or going to an escape room. If you have any recommendations, please let me know! Thanks for stopping by :)
+        When I'm not coding, I'm working on digital art, gaming, or going to an escape room. If you have any escape room recommendations, please let me know! Thanks for stopping by :)
       </p>
 
     </React.Fragment>
