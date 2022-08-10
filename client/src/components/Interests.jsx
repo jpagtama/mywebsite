@@ -19,7 +19,7 @@ const Interests = () => {
         <h1 ref={ref} className={inView? styles.slideIn: ''}>Interests</h1>
       </div>
       <p className={styles.desc}>
-        When I'm not coding, I'm working on digital art, gaming, or going to an escape room. At the moment, my top hobbies are working on digital art and gaming. I've done almost all escape rooms in Los Angeles and started going to some in Orange County.
+        When I'm not coding, I'm working on digital art, gaming, or going to an escape room. If you have any recommendations, please let me know! Thanks for stopping by :)
       </p>
 
     </React.Fragment>
