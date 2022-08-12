@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import About from './About'
 import Experience from './Experience'
 import Section from './Section'
@@ -10,6 +10,14 @@ import Footer from './Footer'
 import styles from '../styles/Main.module.css'
 
 const Main = () => {
+
+  useEffect(() => {
+    if (window.location.hash.length) {
+      let sectionRef = document.getElementById(window.location.hash.replace(/#/g,''))
+      sectionRef.scrollIntoView();
+    }
+  }, [])
+
   return (
     <div className={ styles.main } >
         <Section ><About /></Section>
