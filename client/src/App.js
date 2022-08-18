@@ -1,8 +1,8 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import store from './store';
-import SideNav from './components/SideNav';
-import Main from './components/Main';
+import SideNav from './components/personal/SideNav';
+import Main from './components/personal/Main';
 
 const App = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../styles/GitHubSVG.module.css'
+import styles from '../../../styles/GitHubSVG.module.css'
 
 const GitHubSVG = () => {
   return (

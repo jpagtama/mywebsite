@@ -1,6 +1,6 @@
 import React from 'react'
-import pic from '../assets/julianpagtama.png'
-import styles from '../styles/ProfilePic.module.css'
+import pic from '../../assets/julianpagtama.png'
+import styles from '../../styles/ProfilePic.module.css'
 
 const ProfilePic = () => {
   return (

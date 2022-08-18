@@ -10,6 +10,11 @@
     color: ivory;
     margin: 0;
 }
+.comingSoon {
+    text-align: center;
+    font-weight: 300;
+    margin-top: 5rem;
+}
 .slideIn {
     animation: fromRight 400ms ease-in-out both;
 }

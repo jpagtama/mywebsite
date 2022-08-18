@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../styles/CheckMark.module.css'
+import styles from '../../styles/CheckMark.module.css'
 
 const CheckMark = props => {
   return (

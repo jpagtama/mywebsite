@@ -1,25 +1,33 @@
 import React, {useEffect} from 'react';
 import { useDispatch } from 'react-redux';
-import { navActions } from '../store/navSlice';
+import { navActions } from '../../store/navSlice';
 import { useInView } from 'react-intersection-observer';
-import styles from '../styles/Experience.module.css'
+import styles from '../../styles/Experience.module.css'
 
 const Experience = () => {
     const dispatch = useDispatch()
-    const { ref, inView } = useInView({
+    const { ref: expRef, inView: expInView } = useInView({
         threshold: 0,
+    });
+    const { ref: firstSummaryRef, inView: firstSummaryInView } = useInView({
+        threshold: 0,
+        triggerOnce: true
+    });
+    const { ref: secondSummaryRef, inView: secondSummaryInView } = useInView({
+        threshold: 0,
+        triggerOnce: true
     });
 
     useEffect(() => {
-        if (inView) dispatch(navActions.activate('experience'));
-    }, [inView, dispatch]);
+        if (expInView) dispatch(navActions.activate('experience'));
+    }, [expInView, dispatch]);
 
   return (
     <React.Fragment>
         <div id="Experience" className={styles.headingContainer} >
-            <h1 ref={ref} className={ `${styles.heading} ${inView? styles.slideIn:'' }` }>Experience</h1>
+            <h1 ref={expRef} className={ `${styles.heading} ${expInView? styles.slideIn:'' }` }>Experience</h1>
         </div>
-        <div className={ styles.container }>
+        <div ref={firstSummaryRef} className={ `${styles.container} ${firstSummaryInView? styles.firstSummary: ''}` }>
             <span className={styles.workDetails}>
                 <h2>Software Developer</h2>
                 <h3>Regal Medical Group</h3>
@@ -29,7 +37,7 @@ const Experience = () => {
             </span>
             <p className={ styles.workDates } >January 2018 - March 2021</p>
         </div>
-        <div  className={ styles.container }>
+        <div ref={secondSummaryRef} className={ `${styles.container} ${secondSummaryInView? styles.secondSummary: ''}`}>
             <span className={styles.workDetails}>
                 <h2>Web Developer</h2>
                 <h3>Breakdown Services</h3>

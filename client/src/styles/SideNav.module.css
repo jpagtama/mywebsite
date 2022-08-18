@@ -2,6 +2,7 @@
     position: sticky;
     z-index: 100;
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     align-items: flex-start;
     top: 0;
@@ -26,8 +27,10 @@
     .nav {
         position: fixed;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 2rem;
         top: 0;
         left: 0;
         width: 15rem;
