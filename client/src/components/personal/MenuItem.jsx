@@ -1,5 +1,5 @@
-import React from 'react'
-import styles from '../../styles/MenuItem.module.css'
+import React from 'react';
+import styles from '../../styles/personal/MenuItem.module.css';
 
 const MenuItem = props => {
   return (

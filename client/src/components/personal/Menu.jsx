@@ -2,7 +2,7 @@ import React from 'react';
 import MenuItem from './MenuItem';
 import { useSelector } from 'react-redux';
 import MenuButton from './MenuButton';
-import styles from '../../styles/Menu.module.css';
+import styles from '../../styles/personal/Menu.module.css';
 
 const menuItems = ['About', 'Experience', 'Projects', 'Skills', 'Education', 'Interests'];
 

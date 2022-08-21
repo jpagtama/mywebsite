@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { useInView } from 'react-intersection-observer';
 import {navActions} from '../../store/navSlice';
-import styles from '../../styles/Projects.module.css'
+import styles from '../../styles/personal/Projects.module.css';
 
 const Projects = () => {
   const dispatch = useDispatch();
@@ -23,4 +23,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Projects;

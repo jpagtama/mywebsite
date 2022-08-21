@@ -1,10 +1,10 @@
-import React, {useEffect} from 'react'
-import { navActions } from '../../store/navSlice'
-import { useDispatch } from 'react-redux'
-import LinkedInSVG from './svgs/LinkedInSVG'
-import GitHubSVG from './svgs/GitHubSVG'
+import React, {useEffect} from 'react';
+import { navActions } from '../../store/navSlice';
+import { useDispatch } from 'react-redux';
+import LinkedInSVG from './svgs/LinkedInSVG';
+import GitHubSVG from './svgs/GitHubSVG';
 import { useInView } from 'react-intersection-observer';
-import styles from '../../styles/About.module.css'
+import styles from '../../styles/personal/About.module.css';
 
 
 const About = () => {

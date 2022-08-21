@@ -1,9 +1,9 @@
-import React, {useEffect} from 'react'
+import React, {useEffect} from 'react';
 import { useDispatch } from 'react-redux';
 import { useInView } from 'react-intersection-observer';
 import {navActions} from '../../store/navSlice';
 import CheckMark from './CheckMark';
-import styles from '../../styles/Skills.module.css'
+import styles from '../../styles/personal/Skills.module.css';
 
 const Skills = () => {
   const dispatch = useDispatch();
@@ -53,4 +53,4 @@ const Skills = () => {
   )
 }
 
-export default Skills
+export default Skills;

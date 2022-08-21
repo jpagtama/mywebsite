@@ -1,13 +1,13 @@
-import React, {useEffect} from 'react'
-import About from './About'
-import Experience from './Experience'
-import Section from './Section'
-import Projects from './Projects'
-import Skills from './Skills'
-import Education from './Education'
-import Interests from './Interests'
-import Footer from './Footer'
-import styles from '../../styles/Main.module.css'
+import React, {useEffect} from 'react';
+import About from './About';
+import Experience from './Experience';
+import Section from './Section';
+import Projects from './Projects';
+import Skills from './Skills';
+import Education from './Education';
+import Interests from './Interests';
+import Footer from './Footer';
+import styles from '../../styles/personal/Main.module.css';
 
 const Main = () => {
 

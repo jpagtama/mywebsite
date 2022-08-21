@@ -1,6 +1,6 @@
-import React from 'react'
-import pic from '../../assets/julianpagtama.png'
-import styles from '../../styles/ProfilePic.module.css'
+import React from 'react';
+import pic from '../../assets/julianpagtama.png';
+import styles from '../../styles/personal/ProfilePic.module.css';
 
 const ProfilePic = () => {
   return (
@@ -8,4 +8,4 @@ const ProfilePic = () => {
   )
 }
 
-export default ProfilePic
+export default ProfilePic;

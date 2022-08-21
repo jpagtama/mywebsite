@@ -1,7 +1,7 @@
 import React from 'react';
 import { navActions } from '../../store/navSlice';
 import { useSelector, useDispatch } from 'react-redux';
-import styles from '../../styles/MenuButton.module.css';
+import styles from '../../styles/personal/MenuButton.module.css';
 
 const MenuButton = props => {
   const dispatch = useDispatch();

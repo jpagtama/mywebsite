@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../styles/Section.module.css'
+import styles from '../../styles/personal/Section.module.css';
 
 const Section = props => {
   return (

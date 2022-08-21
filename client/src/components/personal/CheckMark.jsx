@@ -1,5 +1,5 @@
-import React from 'react'
-import styles from '../../styles/CheckMark.module.css'
+import React from 'react';
+import styles from '../../styles/personal/CheckMark.module.css';
 
 const CheckMark = props => {
   return (
@@ -9,4 +9,4 @@ const CheckMark = props => {
   )
 }
 
-export default CheckMark
+export default CheckMark;

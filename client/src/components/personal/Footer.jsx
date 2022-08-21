@@ -1,7 +1,7 @@
-import React from 'react'
-import { FaReact, FaNode, FaJs } from 'react-icons/fa'
+import React from 'react';
+import { FaReact, FaNode, FaJs } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
-import styles from '../../styles/Footer.module.css'
+import styles from '../../styles/personal/Footer.module.css';
 
 const Footer = () => {
   const year = new Date().getFullYear();

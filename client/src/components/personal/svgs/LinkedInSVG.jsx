@@ -1,5 +1,5 @@
-import React from 'react'
-import styles from '../../../styles/LinkedInSVG.module.css'
+import React from 'react';
+import styles from '../../../styles/personal/LinkedInSVG.module.css';
 
 const LinkedInSVG = () => {
   // rgb(85,107,47)
@@ -18,4 +18,4 @@ const LinkedInSVG = () => {
   )
 }
 
-export default LinkedInSVG
+export default LinkedInSVG;
