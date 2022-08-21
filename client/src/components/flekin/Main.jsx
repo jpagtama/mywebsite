@@ -105,13 +105,13 @@ const Main = () => {
           <div className={`${styles.codeBlock} ${styles.commentBlock}`}>
             <p>import &#123;flekin&#125; from 'flekin';</p>
             <p>const scores = flekin(<span className={styles.codeArg}>'Nothing is so fatiguing as the eternal hanging on of an uncompleted task.'</span>);</p>
-            <i className={styles.codeComment}>&frasl;&frasl; &nbsp;&#123;</i>
-            <i className={styles.codeComment}>&frasl;&frasl; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grade_level: 9.45,</i>
-            <i className={styles.codeComment}>&frasl;&frasl; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reading_ease: 50.47,</i>
-            <i className={styles.codeComment}>&frasl;&frasl; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;word_count: 13,</i>
-            <i className={styles.codeComment}>&frasl;&frasl; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;syllable_count: 22,</i>
-            <i className={styles.codeComment}>&frasl;&frasl; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sentence_count: 1</i>
-            <i className={styles.codeComment}>&frasl;&frasl; &nbsp;&#125;</i>
+            <i className={styles.codeComment}>&#47;&#47; &nbsp;&#123;</i>
+            <i className={styles.codeComment}>&#47;&#47; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grade_level: 9.45,</i>
+            <i className={styles.codeComment}>&#47;&#47; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reading_ease: 50.47,</i>
+            <i className={styles.codeComment}>&#47;&#47; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;word_count: 13,</i>
+            <i className={styles.codeComment}>&#47;&#47; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;syllable_count: 22,</i>
+            <i className={styles.codeComment}>&#47;&#47; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sentence_count: 1</i>
+            <i className={styles.codeComment}>&#47;&#47; &nbsp;&#125;</i>
           </div>
         </article>
       </div>
@@ -119,4 +119,4 @@ const Main = () => {
   )
 }
 
-export default Main
+export default Main;
