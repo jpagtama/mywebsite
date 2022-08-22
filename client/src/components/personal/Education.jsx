@@ -9,10 +9,6 @@ const Education = () => {
   const { ref, inView } = useInView({
     threshold: 0,
   });
-  const { ref: educationRef, inView: educationInView } = useInView({
-    threshold: 0,
-    triggerOnce: true
-  });
   useEffect(() => {
     if (inView) dispatch(navActions.activate('education'))
   }, [inView, dispatch]);
@@ -22,7 +18,7 @@ const Education = () => {
       <div id="Education" className={styles.headingContainer}>
         <h1 ref={ref} className={inView? styles.slideIn: ''} >Education</h1>
       </div>
-      <div ref={educationRef} className={`${styles.educationInfo}`} >
+      <div className={`${styles.educationInfo}`} >
           <span className={styles.collegeInfo}>
               <h2>California State University, Long Beach</h2>
               <h3>Bachelor's of Science, Computer Science</h3>
