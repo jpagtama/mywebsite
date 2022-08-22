@@ -1,5 +1,6 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {flekin} from 'flekin';
+import { useInView } from 'react-intersection-observer';
 import {FaRegCopy} from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import styles from '../../styles/flekin/Main.module.css';
@@ -17,6 +18,14 @@ const Main = () => {
   const [syllableCount, setSyllableCount] = useState();
   const [sentenceCount, setSentenceCount] = useState();
 
+  const { ref: resultsRef, inView } = useInView({
+    threshold: 0,
+  });
+
+  useEffect(() => {
+    console.log('inView', inView)
+  }, [inView])
+
   const textHandler = e => {
     setNumbersDetected(/\d/.test(e.target.value));
     setText(e.target.value);
@@ -32,6 +41,7 @@ const Main = () => {
       setWordCount(scores.word_count);
       setSyllableCount(scores.syllable_count);
       setSentenceCount(scores.sentence_count);
+      if (!inView) document.getElementById('results_id').scrollIntoView();
       setAnimateResults(true);
       setError(false);
       setErrorMsg('');
@@ -59,7 +69,7 @@ const Main = () => {
       <div className={styles.mainContainer} >
         <div className={styles.inputResultsContainer}>
           <div className={styles.resultContainer}>
-            <h2>Results</h2>
+            <h2 id="results_id" ref={resultsRef} >Results</h2>
             <div className={styles.resultList}>
               <div className={styles.resultField} >
                 <div>Grade Level:</div>
