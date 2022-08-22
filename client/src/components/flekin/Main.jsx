@@ -1,12 +1,15 @@
 import React, {useState} from 'react';
 import {flekin} from 'flekin';
 import {FaRegCopy} from 'react-icons/fa';
-import styles from '../../styles/flekin/Main.module.css';
 import { IconContext } from 'react-icons/lib';
+import styles from '../../styles/flekin/Main.module.css';
 
 const Main = () => {
   const [text, setText] = useState('');
   const [copyToClip, setCopyToClip] = useState(false);
+  const [numbersDetected, setNumbersDetected] = useState(false);
+  const [error, setError] = useState(false);
+  const [errorMsg, setErrorMsg] = useState('');
   const [animateResults, setAnimateResults] = useState(false);
   const [readingEase, setReadingEase] = useState();
   const [gradeLevel, setGradeLevel] = useState();
@@ -15,12 +18,14 @@ const Main = () => {
   const [sentenceCount, setSentenceCount] = useState();
 
   const textHandler = e => {
+    setNumbersDetected(/\d/.test(e.target.value));
     setText(e.target.value);
   }
 
   const submitHandler = e => {
     e.preventDefault();
     try {
+      if (text.trim().length === 0) throw new Error('Please enter some text');
       const scores = flekin(text);
       setReadingEase(scores.reading_ease);
       setGradeLevel(scores.grade_level);
@@ -28,8 +33,11 @@ const Main = () => {
       setSyllableCount(scores.syllable_count);
       setSentenceCount(scores.sentence_count);
       setAnimateResults(true);
+      setError(false);
+      setErrorMsg('');
     } catch (e) {
-      console.log("error >>", e);
+      setError(true);
+      setErrorMsg(e.message);
     }
   }
 
@@ -78,6 +86,8 @@ const Main = () => {
           <form className={styles.formArea}  onSubmit={submitHandler} spellCheck={false}>
             <label className={styles.textLabel} htmlFor='textBox' >Enter your text here:</label>
             <textarea id="textBox" className={styles.textArea} value={text} onChange={textHandler} />
+            {numbersDetected && <div className={styles.numbersDetected}>Numbers detected: convert numbers to words for more accurate results</div>}
+            {error && <div className={styles.errorMsg}>{errorMsg}</div>}
             <button className={text.length? styles.getScoresBtn: styles.disabledBtn} disabled={!text.length? true: false} >Get Scores</button>
           </form>
         </div>

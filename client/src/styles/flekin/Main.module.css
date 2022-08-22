@@ -125,9 +125,20 @@
     display: block;
     padding-bottom: 2rem;
 }
+.numbersDetected {
+    text-align: center;
+    padding: 1rem 0 0 0;
+    align-self: center;
+    color: var(--primary-color);
+}
+.errorMsg {
+    padding: 1rem 0 0 0;
+    align-self: center;
+    color: red;
+}
 
 .copyToClip {
-    animation: copyToClip 100ms linear both;
+    animation: copyToClip 500ms ease-out both;
 }
 .gradeResult {
     animation: rotateOnY 500ms ease-in both;
@@ -159,7 +170,7 @@
 }
 @keyframes copyToClip {
     0% {transform: scaleY(1);}
-    50% {transform: scaleY(1.2);}
+    25% {transform: scaleY(1.2);}
     100% {transform: scaleY(1);}
 }
 
