@@ -22,7 +22,7 @@ const Education = () => {
       <div id="Education" className={styles.headingContainer}>
         <h1 ref={ref} className={inView? styles.slideIn: ''} >Education</h1>
       </div>
-      <div ref={educationRef} className={`${styles.educationInfo} ${educationInView? styles.animateEdDetails: ''}`} >
+      <div ref={educationRef} className={`${styles.educationInfo}`} >
           <span className={styles.collegeInfo}>
               <h2>California State University, Long Beach</h2>
               <h3>Bachelor's of Science, Computer Science</h3>
