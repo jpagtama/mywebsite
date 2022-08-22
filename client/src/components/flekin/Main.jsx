@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import {flekin} from 'flekin';
 import { useInView } from 'react-intersection-observer';
 import {FaRegCopy} from 'react-icons/fa';
@@ -21,10 +21,6 @@ const Main = () => {
   const { ref: resultsRef, inView } = useInView({
     threshold: 0,
   });
-
-  useEffect(() => {
-    console.log('inView', inView)
-  }, [inView])
 
   const textHandler = e => {
     setNumbersDetected(/\d/.test(e.target.value));
