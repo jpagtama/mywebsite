@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { useInView } from 'react-intersection-observer';
 import {navActions} from '../../store/navSlice';
+import flekinGif from '../../assets/flekin_med.gif';
 import styles from '../../styles/personal/Projects.module.css';
 
 const Projects = () => {
@@ -18,7 +19,20 @@ const Projects = () => {
       <div id="Projects" className={ styles.headingContainer }>
         <h1 ref={ref} className={inView? styles.slideIn: ''}>Projects</h1>
       </div>
-      <p className={styles.comingSoon}>coming soon</p>
+      <div className={styles.projContainer}>
+        <img className={styles.demoGif} src={flekinGif} alt="flekin" />
+        <div className={styles.projTextContainer}>
+          <h4 className={styles.projTitle}>Flekin</h4>
+          <div className={styles.projTech}>
+            <span>React | JavaScript | NPM</span>
+          </div>
+          <p className={styles.projDesc}>Flekin is an npm package that allows developers to automatically extract the number of words, syllables, and sentences. Returns a readability score as processed by the Flesch-Kincaid formula.</p>
+          <div className={styles.projLinks}>
+            <a href="/flekin" target="_blank" rel="noopener noreferrer" >Go to project</a>
+            <a href="https://github.com/jpagtama/flekin" target="_blank" rel="noopener noreferrer" >View the code</a>
+          </div>
+        </div>
+      </div>
     </>
   )
 }

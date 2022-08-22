@@ -10,10 +10,51 @@
     color: ivory;
     margin: 0;
 }
-.comingSoon {
+.projTitle {
+    color: darkslategray;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+}
+.projDesc {
+    font-size: 1.5rem;
     text-align: center;
     font-weight: 300;
-    margin-top: 5rem;
+    margin: 0;
+}
+.projTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+.projContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.demoGif {
+    margin-top: 2rem;
+    width: 350px;
+    height: auto;
+    border-radius: 8px;
+}
+.projTech {
+    margin: 1rem 0;
+    color: slategray;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.projLinks a {
+    display: inline-block;
+    text-decoration: none;
+    color: ivory;
+    cursor: pointer;
+    background-color: darkolivegreen;
+    border-radius: 8px;
+    padding: 1rem 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
 }
 .slideIn {
     animation: fromRight 400ms ease-in-out both;
@@ -28,5 +69,20 @@
         background-color: darkslategray;
         padding: 4rem 3rem;
         margin-bottom: 4rem;
+    }
+    .projContainer {
+        padding-left: 3rem;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .projTextContainer {
+        align-items: flex-start;
+        padding: 0 1rem;
+    }
+    .projDesc {
+        text-align: left;
+    }
+    .demoGif {
+        margin-top: 0;
     }
 }
