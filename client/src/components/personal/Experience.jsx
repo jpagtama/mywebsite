@@ -32,7 +32,7 @@ const Experience = () => {
                 <h2>Software Developer</h2>
                 <h3>Regal Medical Group</h3>
                 <p className={ styles.workDesc } >
-                    Developed and maintained a variety of internal and external applications within the health industry. Our users consists of customers, nurses, doctors, and employees within our network. Additionally, I worked to ensure the protection of sensitive patient information to meet HIPAA compliance standards.
+                    Developed and maintained applications within the health industry. Users consists of customers, nurses, doctors, and employees within their network.
                 </p>
             </span>
             <p className={ styles.workDates } >January 2018 - March 2021</p>
