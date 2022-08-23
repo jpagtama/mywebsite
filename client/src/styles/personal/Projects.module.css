@@ -42,7 +42,7 @@
 .projTech {
     margin: 1rem 0;
     color: slategray;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 300;
 }
 .projLinks a {
@@ -64,12 +64,7 @@
     0% { transform: translateX(75%); opacity: 0%;}
     100% { transform: translateX(0%); opacity: 100%; }
 }
-@media (min-width:768px) {
-    .headingContainer {
-        background-color: darkslategray;
-        padding: 4rem 3rem;
-        margin-bottom: 4rem;
-    }
+@media (min-width: 821px) {
     .projContainer {
         padding-left: 3rem;
         flex-direction: row;
@@ -81,6 +76,13 @@
     }
     .projDesc {
         text-align: left;
+    }
+}
+@media (min-width:768px) {
+    .headingContainer {
+        background-color: darkslategray;
+        padding: 4rem 3rem;
+        margin-bottom: 4rem;
     }
     .demoGif {
         margin-top: 0;
