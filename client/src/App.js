@@ -1,11 +1,12 @@
-import React, {Suspense} from 'react';
+import React, { Suspense } from 'react';
 import { Provider } from 'react-redux';
 import store from './store';
-import {Routes, Route} from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import SideNav from './components/personal/SideNav';
 import Main from './components/personal/Main';
 
 const Flekin = React.lazy(() => import('./components/flekin/Flekin'));
+const Calendar = React.lazy(() => import('./components/calendar/Calendar'));
 
 const App = () => {
   const welcome = <React.Fragment><SideNav /><Main /></React.Fragment >
@@ -15,6 +16,7 @@ const App = () => {
       <Suspense >
         <Routes >
           <Route path="/" element={welcome} />
+          <Route path="/react-event-viewer-calendar/*" element={<Calendar />} />
           <Route path="/flekin/*" element={<Flekin />} />
           <Route path="/*" element={welcome} />
         </Routes>
