@@ -64,7 +64,7 @@
     0% { transform: translateX(75%); opacity: 0%;}
     100% { transform: translateX(0%); opacity: 100%; }
 }
-@media (min-width: 821px) {
+@media (min-width: 1024px) {
     .projContainer {
         padding-left: 3rem;
         flex-direction: row;
