@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8af12842.css",
+    "main.js": "/static/js/main.61c75409.js",
+    "static/css/720.8b5af3e9.chunk.css": "/static/css/720.8b5af3e9.chunk.css",
+    "static/js/720.edafbc71.chunk.js": "/static/js/720.edafbc71.chunk.js",
+    "static/css/136.3078af1a.chunk.css": "/static/css/136.3078af1a.chunk.css",
+    "static/js/136.a46239e9.chunk.js": "/static/js/136.a46239e9.chunk.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/js/18.d45eea3b.chunk.js": "/static/js/18.d45eea3b.chunk.js",
+    "static/media/flekin_med.gif": "/static/media/flekin_med.91d6a005842188078bfe.gif",
+    "static/media/julianpagtama.png": "/static/media/julianpagtama.a8f5ef93ffe4c738cd3c.png",
+    "index.html": "/index.html",
+    "main.8af12842.css.map": "/static/css/main.8af12842.css.map",
+    "main.61c75409.js.map": "/static/js/main.61c75409.js.map",
+    "720.8b5af3e9.chunk.css.map": "/static/css/720.8b5af3e9.chunk.css.map",
+    "720.edafbc71.chunk.js.map": "/static/js/720.edafbc71.chunk.js.map",
+    "136.3078af1a.chunk.css.map": "/static/css/136.3078af1a.chunk.css.map",
+    "136.a46239e9.chunk.js.map": "/static/js/136.a46239e9.chunk.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map",
+    "18.d45eea3b.chunk.js.map": "/static/js/18.d45eea3b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8af12842.css",
+    "static/js/main.61c75409.js"
+  ]
+}
